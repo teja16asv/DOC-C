@@ -1,0 +1,129 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  /* Updated to healthcare theme colors - blue, white, green */
+  --background: #f0f4f8; /* light gray for background */
+  --foreground: #2b2d42; /* dark gray for text */
+  --card: #ffffff; /* white for card backgrounds */
+  --card-foreground: #2b2d42; /* dark gray for card text */
+  --popover: #ffffff; /* white for popover */
+  --popover-foreground: #2b2d42; /* dark gray for popover text */
+  --primary: #007bff; /* blue for primary actions */
+  --primary-foreground: #ffffff; /* white for primary text */
+  --secondary: #28a745; /* green for secondary actions */
+  --secondary-foreground: #ffffff; /* white for secondary text */
+  --muted: #f0f4f8; /* light gray for muted elements */
+  --muted-foreground: #6c757d; /* medium gray for muted text */
+  --accent: #28a745; /* green for accents */
+  --accent-foreground: #ffffff; /* white for accent text */
+  --destructive: #dc2626; /* red for destructive actions */
+  --destructive-foreground: #ffffff; /* white for destructive text */
+  --border: #d1d5db; /* light border color */
+  --input: #ffffff; /* white for input backgrounds */
+  --ring: rgba(0, 123, 255, 0.5); /* blue ring for focus states */
+  --radius: 0.5rem; /* rounded corners */
+  --sidebar: #ffffff; /* white for sidebar */
+  --sidebar-foreground: #2b2d42; /* dark gray for sidebar text */
+  --sidebar-primary: #007bff; /* blue for sidebar primary elements */
+  --sidebar-primary-foreground: #ffffff; /* white for sidebar primary text */
+  --sidebar-accent: #28a745; /* green for sidebar accents */
+  --sidebar-accent-foreground: #ffffff; /* white for sidebar accent text */
+  --sidebar-border: #d1d5db; /* light border for sidebar */
+  --sidebar-ring: rgba(0, 123, 255, 0.5); /* blue ring for sidebar focus */
+
+  /* Chart colors for healthcare data visualization */
+  --chart-1: #007bff;
+  --chart-2: #28a745;
+  --chart-3: #17a2b8;
+  --chart-4: #ffc107;
+  --chart-5: #6f42c1;
+}
+
+.dark {
+  /* Dark mode healthcare theme */
+  --background: #1a1d29;
+  --foreground: #f8f9fa;
+  --card: #2b2d42;
+  --card-foreground: #f8f9fa;
+  --popover: #2b2d42;
+  --popover-foreground: #f8f9fa;
+  --primary: #4a90e2;
+  --primary-foreground: #ffffff;
+  --secondary: #5cb85c;
+  --secondary-foreground: #ffffff;
+  --muted: #3a3d4a;
+  --muted-foreground: #adb5bd;
+  --accent: #5cb85c;
+  --accent-foreground: #ffffff;
+  --destructive: #e74c3c;
+  --destructive-foreground: #ffffff;
+  --border: #495057;
+  --input: #3a3d4a;
+  --ring: rgba(74, 144, 226, 0.5);
+  --sidebar: #2b2d42;
+  --sidebar-foreground: #f8f9fa;
+  --sidebar-primary: #4a90e2;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #5cb85c;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: #495057;
+  --sidebar-ring: rgba(74, 144, 226, 0.5);
+}
+
+@theme inline {
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* .input {
+  @apply w-full border border-gray-300 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500;
+} */
+

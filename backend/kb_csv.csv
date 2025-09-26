@@ -1,0 +1,39 @@
+phrase,specialist,weight
+chest pain,Cardiologist,1.0
+chest tightness,Cardiologist,1.0
+palpitations,Cardiologist,0.9
+shortness of breath,Pulmonologist,1.0
+wheezing,Pulmonologist,0.9
+persistent cough,Pulmonologist,0.9
+throat pain,ENT,1.0
+ear pain,ENT,1.0
+blocked nose,ENT,0.8
+skin rash,Dermatologist,1.0
+itchy skin,Dermatologist,0.9
+acne,Dermatologist,0.8
+stomach ache,Gastroenterologist,1.0
+acid reflux,Gastroenterologist,0.9
+loose motions,Gastroenterologist,0.9
+headache,Neurologist,0.9
+migraine,Neurologist,1.0
+dizziness,Neurologist,0.8
+joint pain,Orthopedic,1.0
+back pain,Orthopedic,1.0
+knee pain,Orthopedic,0.9
+anxiety,Psychiatrist,1.0
+low mood,Psychiatrist,0.9
+sleep problems,Psychiatrist,0.8
+burning urination,Urologist,1.0
+frequent urination,Urologist,0.9
+period cramps,Gynecologist,1.0
+irregular periods,Gynecologist,1.0
+pregnancy checkup,Gynecologist,1.0
+eye redness,Ophthalmologist,1.0
+blurry vision,Ophthalmologist,1.0
+toothache,Dentist,1.0
+gum bleeding,Dentist,0.9
+thyroid swelling,Endocrinologist,1.0
+high blood sugar,Endocrinologist,1.0
+fever,General Physician,1.0
+body ache,General Physician,0.9
+cold and cough,General Physician,1.0
